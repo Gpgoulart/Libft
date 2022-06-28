@@ -177,17 +177,17 @@ int main(void)
 //     printf("%d\n", ft_atoi("123"));
 //     printf("%d\n", atoi("123"));
     //    printf("ft_calloc-----------------------------------------------------------------------------\n");
-    // //    size_t str[] = "";
-    // //    size_t sizee = 10;
-    // //    void result;
-    // //    result = ft_calloc(str, sizee);
-    // //    printf("%d\n");
-    // //    printf("\n");
-    // //    size_t str2[] = "\t";
-    // //    size_t sizee2 = 10;
-    // //    void result2;
-    // //    result2 = calloc(str2, sizee2);
-    // //    printf("%p\n",result2);
+    //    size_t str[] = "";
+    //    size_t sizee = 10;
+    //    void result;
+    //    result = ft_calloc(str, sizee);
+    //    printf("%d\n");
+    //    printf("\n");
+    //    size_t str2[] = "\t";
+    //    size_t sizee2 = 10;
+    //    void result2;
+    //    result2 = calloc(str2, sizee2);
+    //    printf("%p\n",result2);
 
 
     // char *vtr;
@@ -197,17 +197,17 @@ int main(void)
     // char *vtr2;
 	// vtr2 = ft_calloc(10, sizeof(int));
 	// printf("%s\n", vtr2);
-    // printf("ft_putchar_fd-----------------------------------------------------------------------------\n");
-	// ft_putchar_fd('c', 2);
-    // printf("\n");
-    // printf("ft_putstr_fd-----------------------------------------------------------------------------\n");
-    // ft_putstr_fd("doidera",0);
-    // printf("\n");
-    // printf("ft_putendl_fd-----------------------------------------------------------------------------\n");
-    // ft_putendl_fd("doidera",1);
-    // printf("ft_putnbr_fd-----------------------------------------------------------------------------\n");
-    // ft_putnbr_fd(-10000000,1);
-    // printf("\n");
+    printf("ft_putchar_fd-----------------------------------------------------------------------------\n");
+	ft_putchar_fd('c', 2);
+    printf("\n");
+    printf("ft_putstr_fd-----------------------------------------------------------------------------\n");
+    ft_putstr_fd("doidera",0);
+    printf("\n");
+    printf("ft_putendl_fd-----------------------------------------------------------------------------\n");
+    ft_putendl_fd("doidera",1);
+    printf("ft_putnbr_fd-----------------------------------------------------------------------------\n");
+    ft_putnbr_fd(-10000000,1);
+    printf("\n");
 }       
 
 

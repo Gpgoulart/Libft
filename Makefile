@@ -15,7 +15,7 @@ FLAGS := -Wall -Wextra -Werror
 
 SRCS=	$(wildcard *.c)
 
-OBJS=		$(SRCS: .c=.o)
+OBJS=		$(SRCS:.c=.o)
 
 CC=			cc
 
