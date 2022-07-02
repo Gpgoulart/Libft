@@ -31,4 +31,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 		ft_memcpy(dest, tmp, n); // copia de src para dst com o bytes do src
 	return (dst);
 }
-

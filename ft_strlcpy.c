@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize) // teste para entender -- testar com a original e revisar codigo
+size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize) // 
 {
 	size_t	i;
 
