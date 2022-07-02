@@ -208,12 +208,18 @@ int main(void)
     // printf("ft_putnbr_fd-----------------------------------------------------------------------------\n");
     // ft_putnbr_fd(-10000000,1);
     // printf("\n");
-    printf("ft_strjoin-----------------------------------------------------------------------------\n");
-    const char str1[] = "doido";
-    const char str2[] = "cara";
-    char *res = ft_strjoin(str1, str2);
-    printf("%s", res);
-    printf("\n");
+    // printf("ft_strjoin-----------------------------------------------------------------------------\n");
+    // const char str1[] = "doido";
+    // const char str2[] = "cara";
+    // char *res = ft_strjoin(str1, str2);
+    // printf("%s", res);
+    // printf("\n");
+    // printf("ft_strdup-----------------------------------------------------------------------------\n");
+    // char str1[] = "doido";
+    // char *res = ft_strdup(str1);
+    // printf("%s", res);
+    // printf("\n");
+
 }       
 
 
