@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gpecanha <gpecanha@student.42.rio>         +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/17 20:21:22 by gpecanha          #+#    #+#             */
-/*   Updated: 2022/06/17 20:21:22 by gpecanha         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 /* ************************************************************************** */
 /*                                                                            */
@@ -188,8 +177,6 @@ int main(void)
     //    void result2;
     //    result2 = calloc(str2, sizee2);
     //    printf("%p\n",result2);
-
-
     // char *vtr;
 	// vtr = calloc(10, sizeof(int));
 	// printf("%s\n", vtr);
@@ -219,7 +206,6 @@ int main(void)
     // char *res = ft_strdup(str1);
     // printf("%s", res);
     // printf("\n");
-
-}       
-
-
+    printf("%s\n", ft_strtrim("abqbc", "abc"));
+	printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
+}  
