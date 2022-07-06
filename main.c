@@ -16,6 +16,13 @@
 #include <stdio.h>
 # include <string.h>
 
+char f(unsigned int i, char c)
+{
+	char str;
+	str = c + 1;
+	return (str);
+}
+
 int main(void)
 {
     
@@ -206,6 +213,16 @@ int main(void)
     // char *res = ft_strdup(str1);
     // printf("%s", res);
     // printf("\n");
-    printf("%s\n", ft_strtrim("abqbc", "abc"));
-	printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
+    // printf("ft_strtrim-----------------------------------------------------------------------------\n");
+    // printf("%s\n", ft_strtrim("abqbc", "abc"));
+	// printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
+    // printf("ft_substr-----------------------------------------------------------------------------\n");
+    // char* str;
+	// str = ft_substr("Hello, 42Rio!", 7, 2);
+	// printf("%s\n", str);
+    // printf("ft_strmapi-----------------------------------------------------------------------------\n");
+    char str1[] = "abc";
+    char* str2;
+	str2 = ft_strmapi(str1, *f);
+	printf("%s\n", str2);
 }  
