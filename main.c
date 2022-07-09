@@ -12,14 +12,14 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
+# include <ctype.h>
+# include <stdio.h>
 # include <string.h>
 
 char f(unsigned int i, char c)
 {
 	char str;
-	str = c + 1;
+	str = c + i;
 	return (str);
 }
 
@@ -73,10 +73,10 @@ int main(void)
     // printf("\n");
     // printf("ft_strchr-----------------------------------------------------------------------------\n");
     // const char str[] = "doidera";
-    // const char ch = 'd';
+    // const char ch = 'i';
     // char *var1;
     // var1 = ft_strchr(str, ch);
-    // printf("String after |%c| is - |%s|\n", ch, var1);
+    // printf("String after |%c| is - |%s|\n", ch, var1 + 1);
     // printf("\n");
     // printf("ft_strrchr-----------------------------------------------------------------------------\n");
     // const char strr[] = "doidera";
@@ -221,8 +221,13 @@ int main(void)
 	// str = ft_substr("Hello, 42Rio!", 7, 2);
 	// printf("%s\n", str);
     // printf("ft_strmapi-----------------------------------------------------------------------------\n");
+    // char str1[] = "abc";
+    // char* str2;
+	// str2 = ft_strmapi(str1, *f);
+	// printf("%s\n", str2);
+    printf("ft_striteri-----------------------------------------------------------------------------\n");
     char str1[] = "abc";
     char* str2;
-	str2 = ft_strmapi(str1, *f);
+	str2 = ft_striteri(str1, *f);
 	printf("%s\n", str2);
 }  
