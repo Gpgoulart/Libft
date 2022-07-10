@@ -10,17 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*p;
+	size_t			i;
+	unsigned char	*ptr;
 
-	p = (unsigned char *)s; //p = america 
-	while (len--) // posicao 4 --
+	i = 0;
+	ptr = (unsigned char *)s;
+	while (i < n)
 	{
-		*p = (unsigned char)c;  // posicao len[] = y
-		p++; 
+		*ptr = (unsigned char)c;
+		i++;
+		ptr++;
 	}
 	return (s);
 }

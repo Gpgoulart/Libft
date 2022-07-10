@@ -16,12 +16,12 @@
 # include <stdio.h>
 # include <string.h>
 
-char f(unsigned int i, char c)
-{
-	char str;
-	str = c + i;
-	return (str);
-}
+// char f(unsigned int i, char c)
+// {
+// 	char str;
+// 	str = c + i;
+// 	return (str);
+// }
 
 int main(void)
 {
@@ -47,8 +47,7 @@ int main(void)
     // printf("ft_strlen-----------------------------------------------------------------------------\n");
     // printf("%zu\n", ft_strlen("longitud"));
     // printf("ft_memset-----------------------------------------------------------------------------\n");
-    // char s26[50];
-	// strcpy(s26, "doidera");
+    // char s26[50] = "doidera";
 	// ft_memset(s26, 'k', 4);
 	// printf("%s\n", s26);
     // printf("ft_memcpy-----------------------------------------------------------------------------\n");
@@ -58,10 +57,16 @@ int main(void)
 	// ret = ft_memcpy(dest, src, 10);
 	// printf("%s\n", ret);
     // printf("ft_strlcat-----------------------------------------------------------------------------\n");
-    // char s14[50], s15[50];
-	// strcpy(s14, "4");
-	// strcpy(s15, "2");
-	// printf("%zu\n", ft_strlcat(s14, s15, 4));
+	// const char src[10]	= "abcd";
+	// char dest[10]   = "123";
+    // size_t 			nb = 10;
+    // printf("Str: %ld", ft_strlcat(dest, src, nb));
+    // printf("\n");
+	// const char src1[10]	= "ab";
+	// char dest1[10]	= "123";
+    // unsigned int 	nb2 = 2;
+    // strcat(src, dest);
+    // printf("Str: %lu \n", strlcat(dest1, src1, nb2));
     // printf("ft_strlcpy-----------------------------------------------------------------------------\n");
     // char	dest2[50];
 	// char	*src2;
@@ -91,30 +96,29 @@ int main(void)
     // char *var3;
     // var3 = ft_strnstr(string, str3, 21);
     // printf("Palavra | %s | em %s \nResult: %s \n", str3, string, var3);
-//     printf("ft_strncmp-----------------------------------------------------------------------------\n");
-//     const char str4[] = "doidera  cara";
-//     const char str5[] = "doidera  lek";
-//     char compare;
-//     compare = (ft_strncmp((char*)str4, (char*)str5, 9));
-//     printf("%s\n%s\n%d\n", str4, str5, compare);
-
-//     const char str6[] = "doidera  cara";
-//     const char str7[] = "doidera  lek";
-//     char compare2;
-//     compare2 = strncmp (str6, str7, 9);
-//     printf("%s\n%s\n%d\n", str6, str7, compare2);
-
-//     printf("ft_memchr-----------------------------------------------------------------------------\n");
-//     char str8[] = "doidera cara";
-//     char *tst;
-//     tst =  memchr(str8, 'c', 9);
-//     printf("%s",tst);
-//     printf("\n");
-//     const char str9[] = "doidera cara";
-//     char *tst2;
-//     tst2 =  ft_memchr(str9, 'c', 9);
-//     printf("%s",tst2);
-//     printf("\n");
+    // printf("ft_strncmp-----------------------------------------------------------------------------\n");
+    // char str1[] = "lets";
+    // char str2[] = "sgo";
+    // int ret;
+    // ret = ft_strncmp(str1, str2, 5);
+    // if(ret < 0) {
+    //   printf("str1 is less than str2");
+    // } else if(ret > 0) {
+    //   printf("str2 is less than str1");
+    // } else {
+    //   printf("str1 is equal to str2");
+    // }
+    // printf("ft_memchr-----------------------------------------------------------------------------\n");
+    // char str8[] = "doidera cara";
+    // char *tst;
+    // tst =  memchr(str8, 'c', 9);
+    // printf("%s",tst);
+    // printf("\n");
+    // const char str9[] = "doidera cara";
+    // char *tst2;
+    // tst2 =  ft_memchr(str9, 'c', 9);
+    // printf("%s",tst2);
+    // printf("\n");
 //     printf("ft_memcmp-----------------------------------------------------------------------------\n");
 //   	char buffer1[] = "doidera";
 // 	char buffer2[] = "doiderakkk";
@@ -154,43 +158,29 @@ int main(void)
 //       i1++;
 //     }
 //     printf("\n");
-//     printf("ft_memmove-----------------------------------------------------------------------------\n");
-    
-//     char dest25[] = "oldstring";
-//     const char src5[]  = "newstring";
-//     printf("Before memmove dest = %s, src = %s\n", dest25, src5);
-//     memmove(dest25, src5, 8);
-//     printf("After memmove dest = %s, src = %s\n", dest25, src5);
-
-//     printf("\n");
-
-//     char dest37[] = "oldstring";
-//     const char src37[]  = "newstring";
-//     printf("Before memmove dest = %s, src = %s\n", dest37, src37);
-//     ft_memmove(dest37, src37, 8);
-//     printf("After memmove dest = %s, src = %s\n", dest37, src37);
-//     printf("ft_atoi-----------------------------------------------------------------------------\n");
-//     printf("%d\n", ft_atoi("123"));
-//     printf("%d\n", atoi("123"));
-    //    printf("ft_calloc-----------------------------------------------------------------------------\n");
-    //    size_t str[] = "";
-    //    size_t sizee = 10;
-    //    void result;
-    //    result = ft_calloc(str, sizee);
-    //    printf("%d\n");
-    //    printf("\n");
-    //    size_t str2[] = "\t";
-    //    size_t sizee2 = 10;
-    //    void result2;
-    //    result2 = calloc(str2, sizee2);
-    //    printf("%p\n",result2);
-    // char *vtr;
-	// vtr = calloc(10, sizeof(int));
-	// printf("%s\n", vtr);
+    // printf("ft_memmove-----------------------------------------------------------------------------\n");
+    // char dest25[] = "oldstring";
+    // const char src5[]  = "newstring";
+    // printf("Before memmove dest = %s, src = %s\n", dest25, src5);
+    // memmove(dest25, src5, 8);
+    // printf("After memmove dest = %s, src = %s\n", dest25, src5);
     // printf("\n");
-    // char *vtr2;
-	// vtr2 = ft_calloc(10, sizeof(int));
-	// printf("%s\n", vtr2);
+    // char dest37[] = "oldstring";
+    // const char src37[]  = "newstring";
+    // printf("Before memmove dest = %s, src = %s\n", dest37, src37);
+    // ft_memmove(dest37, src37, 8);
+    // printf("After memmove dest = %s, src = %s\n", dest37, src37);
+    // printf("ft_atoi-----------------------------------------------------------------------------\n");
+    // printf("%d\n", ft_atoi("123"));
+    // printf("%d\n", atoi("123"));
+    printf("ft_calloc-----------------------------------------------------------------------------\n");
+    char *vtr;
+	vtr = calloc(10, sizeof(int));
+	printf("%s\n", vtr);
+    printf("\n");
+    char *vtr2;
+	vtr2 = ft_calloc(10, sizeof(int));
+	printf("%s\n", vtr2);
     // printf("ft_putchar_fd-----------------------------------------------------------------------------\n");
 	// ft_putchar_fd('c', 2);
     // printf("\n");
@@ -200,7 +190,7 @@ int main(void)
     // printf("ft_putendl_fd-----------------------------------------------------------------------------\n");
     // ft_putendl_fd("doidera",1);
     // printf("ft_putnbr_fd-----------------------------------------------------------------------------\n");
-    // ft_putnbr_fd(-10000000,1);
+    // ft_putnbr_fd(123,1);
     // printf("\n");
     // printf("ft_strjoin-----------------------------------------------------------------------------\n");
     // const char str1[] = "doido";
@@ -225,9 +215,20 @@ int main(void)
     // char* str2;
 	// str2 = ft_strmapi(str1, *f);
 	// printf("%s\n", str2);
-    printf("ft_striteri-----------------------------------------------------------------------------\n");
-    char str1[] = "abc";
-    char* str2;
-	str2 = ft_striteri(str1, *f);
-	printf("%s\n", str2);
+    // printf("ft_striteri-----------------------------------------------------------------------------\n");  
+    // printf("ft_itoa-----------------------------------------------------------------------------\n");  
+    // printf("%s\n", ft_itoa(100));
+    // printf("ft_split-----------------------------------------------------------------------------\n");  
+    // char	**tab;
+	// unsigned int	i;
+
+	// i = 0;
+	// tab = ft_split("split this for me !", 's');
+	// if (!tab[0])
+	// 	ft_putendl_fd("\n", 1);
+	// while (tab[i] != NULL)
+	// {
+	// 	ft_putendl_fd(tab[i], 1);
+	// 	i++;
+	// }
 }  

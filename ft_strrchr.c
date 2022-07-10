@@ -14,16 +14,27 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*ptr;
+	int		i;
+	char	*last_occurence;
 
-	ptr = NULL;
-	while (*s != '\0')
+	if (s[0] == 0 && c == 0)
+		return ((char *)&s[0]);
+	else if (s[0] == 0)
+		return (NULL);
+	i = 0;
+	last_occurence = NULL;
+	if (s != NULL)
 	{
-		if (*s == c)
-			ptr = (char *)s;
-		s++;
+		if (s[i] == 0)
+			return (last_occurence = (char *)&s[i]);
+		while (s[i])
+		{
+			if (s[i] == (char)c)
+				last_occurence = (char *)&s[i];
+			i++;
+		}
+		if (c == 0)
+			return (last_occurence = (char *)&s[i]);
 	}
-	if (c == '\0')
-		return ((char *)s);
-	return (ptr);
+	return (last_occurence);
 }

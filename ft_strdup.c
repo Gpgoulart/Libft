@@ -6,7 +6,7 @@
 /*   By: gpecanha <gpecanha@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 19:22:03 by gpecanha          #+#    #+#             */
-/*   Updated: 2022/07/01 23:43:41 by gpecanha         ###   ########.fr       */
+/*   Updated: 2022/07/10 14:18:52 by gpecanha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ char	*ft_strdup(char *src)
 	size = 0;
 	while (src[size])
 		++size;
-	if (!(new = malloc(sizeof(char) * (size + 1))))
+	new = malloc(sizeof(char) * (size + 1));
+	if (!new)
 		return (NULL);
 	i = 0;
 	while (src[i])
