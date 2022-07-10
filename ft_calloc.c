@@ -6,7 +6,7 @@
 /*   By: gpecanha <gpecanha@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 17:33:57 by gpecanha          #+#    #+#             */
-/*   Updated: 2022/07/10 19:17:29 by root             ###   ########.fr       */
+/*   Updated: 2022/07/10 19:36:29 by gpecanha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,19 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*tmp;
+	char			*dst;
+	unsigned int	total;
+	unsigned int	i;
 
-	tmp = malloc(size * count);
-	if (tmp == 0)
-		return (0);
-	ft_memset(tmp, 0, size * count);
-	return (tmp);
+	total = count * size;
+	dst = malloc(total);
+	if (!dst)
+		return (NULL);
+	i = 0;
+	while (total--)
+	{
+		dst[i] = 0;
+		i++;
+	}
+	return ((void *)dst);
 }
