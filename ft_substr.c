@@ -6,11 +6,10 @@
 /*   By: gpecanha <gpecanha@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 19:07:51 by gpecanha          #+#    #+#             */
-/*   Updated: 2022/07/10 17:11:21 by gpecanha         ###   ########.fr       */
+/*   Updated: 2022/07/11 21:05:56 by gpecanha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//rever codigo
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
