@@ -6,51 +6,51 @@
 /*   By: gpecanha <gpecanha@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 12:08:27 by gpecanha          #+#    #+#             */
-/*   Updated: 2022/07/10 13:22:44 by root             ###   ########.fr       */
+/*   Updated: 2022/07/10 13:22:44 by gpecanha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_nb_len(int nb)
+int	number_len(int n)
 {
 	int	len;
 
 	len = 0;
-	if (nb <= 0)
+	if (n <= 0)
 		len++;
-	while (nb)
+	while (n)
 	{
 		len++;
-		nb = nb / 10;
+		n /= 10;
 	}
 	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	int		len;
-	char	*str;
-	long	nb;
+	int		i;
+	long	aux;
+	char	*ptr;
 
-	len = ft_nb_len(n);
-	nb = n;
-	str = (malloc(sizeof(char) * len + 1));
-	if (!str)
+	i = number_len(n);
+	aux = n;
+	ptr = (char *)malloc(sizeof(char) * (i + 1));
+	if (!ptr)
 		return (NULL);
-	if (nb < 0)
+	ptr[i] = '\0';
+	if (aux < 0)
 	{
-		str[0] = '-';
-		nb = -nb;
+		ptr[0] = '-';
+		aux *= -1;
 	}
-	if (nb == 0)
-		str[0] = '0';
-	str[len--] = '\0';
-	while (nb)
+	if (aux == 0)
+		ptr[0] = '0';
+	ptr[i--] = '\0';
+	while (aux)
 	{
-		str[len] = nb % 10 + '0';
-		len--;
-		nb = nb / 10;
+		ptr[i--] = (aux % 10) + '0';
+		aux /= 10;
 	}
-	return (str);
+	return (ptr);
 }
