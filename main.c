@@ -88,7 +88,7 @@ int main(void)
     // const char chh = 'd';
     // char *var2;
     // var2 = ft_strrchr(strr, chh);
-    // printf("String before |%c| is - |%s|\n", chh, var2);
+    // printf("String before |%c| is - |%s|\n", chh, var2 + 1);
     // printf("\n");
     // printf("ft_strnstr-----------------------------------------------------------------------------\n");
     // const char str3[] = "que";
@@ -96,17 +96,17 @@ int main(void)
     // char *var3;
     // var3 = ft_strnstr(string, str3, 21);
     // printf("Palavra | %s | em %s \nResult: %s \n", str3, string, var3);
-    // printf("ft_strncmp-----------------------------------------------------------------------------\n");
+    // // printf("ft_strncmp-----------------------------------------------------------------------------\n");
     // char str1[] = "lets";
-    // char str2[] = "sgo";
+    // char str2[] = "kk";
     // int ret;
     // ret = ft_strncmp(str1, str2, 5);
     // if(ret < 0) {
-    //   printf("str1 is less than str2");
+    //   printf("str1 is less than str2 %d", ret);
     // } else if(ret > 0) {
-    //   printf("str2 is less than str1");
+    //   printf("str2 is less than str1 %d", ret);
     // } else {
-    //   printf("str1 is equal to str2");
+    //   printf("str1 is equal to str2 %d", ret);
     // }
     // printf("ft_memchr-----------------------------------------------------------------------------\n");
     // char str8[] = "doidera cara";
@@ -205,11 +205,11 @@ int main(void)
     // printf("%s", res);
     // printf("\n");
     // printf("ft_strtrim-----------------------------------------------------------------------------\n");
-    // printf("%s\n", ft_strtrim("abqbc", "abc"));
+    // printf("%s\n", ft_strtrim("doidera", "doar"));
 	// printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
     // printf("ft_substr-----------------------------------------------------------------------------\n");
     // char* str;
-	// str = ft_substr("Hello, 42Rio!", 7, 2);
+	// str = ft_substr("doidera", 5, 2);
 	// printf("%s\n", str);
     // printf("ft_strmapi-----------------------------------------------------------------------------\n");
     // char str1[] = "abc";
@@ -219,16 +219,16 @@ int main(void)
     // printf("ft_striteri-----------------------------------------------------------------------------\n");  
     // printf("ft_itoa-----------------------------------------------------------------------------\n");  
     // printf("%s\n", ft_itoa(100));
-    printf("ft_split-----------------------------------------------------------------------------\n");  
-    char	**tab;
-	unsigned int	i;
-	i = 0;
-	tab = ft_split("split this for me !", ' ');
-	if (!tab[0])
-		ft_putendl_fd("\n", 1);
-	while (tab[i] != NULL)
-	{
-		ft_putendl_fd(tab[i], 1);
-		i++;
-	}
+    // printf("ft_split-----------------------------------------------------------------------------\n");  
+    // char	**tab;
+	// unsigned int	i;
+	// i = 0;
+	// tab = ft_split("split this for me !", ' ');
+	// if (!tab[0])
+	// 	ft_putendl_fd("\n", 1);
+	// while (tab[i] != NULL)
+	// {
+	// 	ft_putendl_fd(tab[i], 1);
+	// 	i++;
+	// }
 }  

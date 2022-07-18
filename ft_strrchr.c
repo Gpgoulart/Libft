@@ -14,27 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	char	*last_occurence;
+	int	i;
 
-	if (s[0] == 0 && c == 0)
-		return ((char *)&s[0]);
-	else if (s[0] == 0)
-		return (NULL);
-	i = 0;
-	last_occurence = NULL;
-	if (s != NULL)
+	i = ft_strlen(s);
+	while (i >= 0)
 	{
-		if (s[i] == 0)
-			return (last_occurence = (char *)&s[i]);
-		while (s[i])
-		{
-			if (s[i] == (char)c)
-				last_occurence = (char *)&s[i];
-			i++;
-		}
-		if (c == 0)
-			return (last_occurence = (char *)&s[i]);
+		if (s[i] == (unsigned char)c)
+			return ((char *)&s[i]);
+		i--;
 	}
-	return (last_occurence);
+	return (NULL);
 }
