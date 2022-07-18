@@ -6,9 +6,10 @@
 /*   By: gpecanha <gpecanha@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 17:55:26 by gpecanha          #+#    #+#             */
-/*   Updated: 2022/07/10 14:03:24 by root             ###   ########.fr       */
+/*   Updated: 2022/07/10 14:03:24 by gpecanha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
