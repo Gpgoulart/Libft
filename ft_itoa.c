@@ -22,7 +22,7 @@ int	number_len(int n)
 	while (n)
 	{
 		len++;
-		n /= 10;
+		n = n / 10;
 	}
 	return (len);
 }
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 	if (aux < 0)
 	{
 		ptr[0] = '-';
-		aux *= -1;
+		aux = aux * -1;
 	}
 	if (aux == 0)
 		ptr[0] = '0';
@@ -50,7 +50,7 @@ char	*ft_itoa(int n)
 	while (aux)
 	{
 		ptr[i--] = (aux % 10) + '0';
-		aux /= 10;
+		aux = aux / 10;
 	}
 	return (ptr);
 }

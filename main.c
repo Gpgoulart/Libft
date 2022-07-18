@@ -59,7 +59,7 @@ int main(void)
     // printf("ft_strlcat-----------------------------------------------------------------------------\n");
 	// const char src[10]	= "abcd";
 	// char dest[10]   = "123";
-    // size_t 			nb = 1;
+    // size_t 			nb = 5;
     // printf("Str: %ld", ft_strlcat(dest, src, nb));
     // printf("\n");
 	// const char src1[10]	= "ab";
@@ -111,31 +111,31 @@ int main(void)
     // printf("ft_memchr-----------------------------------------------------------------------------\n");
     // char str8[] = "doidera cara";
     // char *tst;
-    // tst =  memchr(str8, 'c', 9);
+    // tst =  memchr(str8, 'c', 11);
     // printf("%s",tst);
     // printf("\n");
     // const char str9[] = "doidera cara";
     // char *tst2;
-    // tst2 =  ft_memchr(str9, 'c', 9);
+    // tst2 =  ft_memchr(str9, 'c', 11);
     // printf("%s",tst2);
     // printf("\n");
-//     printf("ft_memcmp-----------------------------------------------------------------------------\n");
-//   	char buffer1[] = "doidera";
-// 	char buffer2[] = "doiderakkk";
-// 	int n;
-// 	n=memcmp ( buffer1, buffer2, sizeof(buffer1) );
-// 	if (n>0) printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
-// 	else if (n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
-// 	else printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
-//     printf("\n");
-//     char buffer3[] = "doidera";
-// 	char buffer4[] = "doiderakkk";
-// 	int n2;
-// 	n2=ft_memcmp ( buffer3, buffer4, sizeof(buffer3) );
-// 	if (n2>0) printf ("'%s' is greater than '%s''%d'\n",buffer3,buffer4, n2);
-// 	else if (n2<0) printf ("'%s' is less than '%s'. '%d'\n",buffer3,buffer4, n2);
-// 	else printf ("'%s' is the same as '%s''%d'\n",buffer3,buffer4, n2);
-//     printf("\n");
+    // printf("ft_memcmp-----------------------------------------------------------------------------\n");
+  	// char buffer1[] = "doidera";
+	// char buffer2[] = "aoiderakkk";
+	// int n;
+	// n=memcmp ( buffer1, buffer2, sizeof(buffer1) );
+	// if (n>0) printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
+	// else if (n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
+	// else printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
+    // printf("\n");
+    // char buffer3[] = "doidera";
+	// char buffer4[] = "dodderakkk";
+	// int n2;
+	// n2=ft_memcmp ( buffer3, buffer4, sizeof(buffer3) );
+	// if (n2>0) printf ("'%s' is greater than '%s''%d'\n",buffer3,buffer4, n2);
+	// else if (n2<0) printf ("'%s' is less than '%s'. '%d'\n",buffer3,buffer4, n2);
+	// else printf ("'%s' is the same as '%s''%d'\n",buffer3,buffer4, n2);
+    // printf("\n");
 //     printf("ft_bzero-----------------------------------------------------------------------------\n");
 //     char buffer[8];
 //     int i;
@@ -162,24 +162,25 @@ int main(void)
     // char dest25[] = "oldstring";
     // const char src5[]  = "newstring";
     // printf("Before memmove dest = %s, src = %s\n", dest25, src5);
-    // memmove(dest25, src5, 8);
+    // memmove(dest25, src5, 10);
     // printf("After memmove dest = %s, src = %s\n", dest25, src5);
     // printf("\n");
     // char dest37[] = "oldstring";
     // const char src37[]  = "newstring";
     // printf("Before memmove dest = %s, src = %s\n", dest37, src37);
-    // ft_memmove(dest37, src37, 8);
+    // ft_memmove(dest37, src37, 10);
     // printf("After memmove dest = %s, src = %s\n", dest37, src37);
     // printf("ft_atoi-----------------------------------------------------------------------------\n");
     // printf("%d\n", ft_atoi("123"));
     // printf("%d\n", atoi("123"));
-    // printf("ft_calloc-----------------------------------------------------------------------------\n");
+    // printf("calloc-----------------------------------------------------------------------------\n");
     // char *vtr;
-	// vtr = calloc(10, sizeof(int));
+	// vtr = calloc(1000000, 1000);
 	// printf("%s\n", vtr);
-    // printf("\n");
+    // // printf("\n"); 
+    // printf("ft_calloc-----------------------------------------------------------------------------\n");
     // char *vtr2;
-	// vtr2 = ft_calloc(10, sizeof(int));
+	// vtr2 = ft_calloc(1000000, 1000);
 	// printf("%s\n", vtr2);
     // printf("ft_putchar_fd-----------------------------------------------------------------------------\n");
 	// ft_putchar_fd('c', 2);
@@ -206,10 +207,10 @@ int main(void)
     // printf("ft_strtrim-----------------------------------------------------------------------------\n");
     // printf("%s\n", ft_strtrim("abqbc", "abc"));
 	// printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
-    printf("ft_substr-----------------------------------------------------------------------------\n");
-    char* str;
-	str = ft_substr("Hello, 42Rio!", 7, 2);
-	printf("%s\n", str);
+    // printf("ft_substr-----------------------------------------------------------------------------\n");
+    // char* str;
+	// str = ft_substr("Hello, 42Rio!", 7, 2);
+	// printf("%s\n", str);
     // printf("ft_strmapi-----------------------------------------------------------------------------\n");
     // char str1[] = "abc";
     // char* str2;
@@ -218,17 +219,16 @@ int main(void)
     // printf("ft_striteri-----------------------------------------------------------------------------\n");  
     // printf("ft_itoa-----------------------------------------------------------------------------\n");  
     // printf("%s\n", ft_itoa(100));
-    // printf("ft_split-----------------------------------------------------------------------------\n");  
-    // char	**tab;
-	// unsigned int	i;
-
-	// i = 0;
-	// tab = ft_split("split this for me !", 's');
-	// if (!tab[0])
-	// 	ft_putendl_fd("\n", 1);
-	// while (tab[i] != NULL)
-	// {
-	// 	ft_putendl_fd(tab[i], 1);
-	// 	i++;
-	// }
+    printf("ft_split-----------------------------------------------------------------------------\n");  
+    char	**tab;
+	unsigned int	i;
+	i = 0;
+	tab = ft_split("split this for me !", ' ');
+	if (!tab[0])
+		ft_putendl_fd("\n", 1);
+	while (tab[i] != NULL)
+	{
+		ft_putendl_fd(tab[i], 1);
+		i++;
+	}
 }  
